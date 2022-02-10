@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/rowMagTV"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                tools:text="5.3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/row_placeTV"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                tools:text="16 Northern park, Dallas"
+                android:layout_toEndOf="@id/rowMagTV"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/row_dateTV"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/row_placeTV"
+                tools:text="On Jan 17"
+                android:layout_toEndOf="@id/rowMagTV"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/row_timeTV"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/row_placeTV"
+                tools:text="at 5:55 pm"
+                android:layout_toEndOf="@id/row_dateTV"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
